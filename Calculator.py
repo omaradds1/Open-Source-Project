@@ -21,7 +21,8 @@ def equal():
         tkinter.messagebox.showinfo("error","syntax error")
 def clear():
     entry.delete(0,tk.END)
-entry.delete(len(entry.get())-1)
+def back():
+    entry.delete(len(entry.get())-1)
 button_1=tk.Button(master=frame,text="1",padx=15,pady=5,width=3,command=lambda:myclick(1))
 button_1.grid(row=5,column=1,pady=2)
 button_2=tk.Button(master=frame,text="2",padx=15,pady=5,width=3,command=lambda:myclick(2))
